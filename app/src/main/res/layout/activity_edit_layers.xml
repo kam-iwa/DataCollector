@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditLayersActivity">
+
+    <ListView
+        android:id="@+id/editLayers_featuresList"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:descendantFocusability="afterDescendants"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/editLayers_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/editLayers_editGeometry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLayers_featuresList">
+
+        <TextView
+            android:id="@+id/editLayers_featureIdDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_featureId" />
+
+        <EditText
+            android:id="@+id/editLayers_featureId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/editLayers_geometryDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_featureGeometry" />
+
+        <TextView
+            android:id="@+id/editLayers_geometry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/editLayers_attributesDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_attributes" />
+
+        <ListView
+            android:id="@+id/editLayers_attributesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="afterDescendants"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editLayers_attributesDesc"
+            app:layout_constraintVertical_bias="0.0">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <Button
+        android:id="@+id/editLayers_editGeometry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_editGeometry"
+        app:layout_constraintBottom_toTopOf="@+id/editLayers_removeFeature"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/editLayers_confirmChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_confirmChanges"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editLayers_addFeature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_addFeature"
+        app:layout_constraintBottom_toTopOf="@+id/editLayers_addAttribute"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editLayers_removeFeature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_removeFeature"
+        app:layout_constraintBottom_toTopOf="@+id/editLayers_removeAttribute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/editLayers_addAttribute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_addAttribute"
+        app:layout_constraintBottom_toTopOf="@+id/editLayers_confirmChanges"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editLayers_removeAttribute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_removeAttribute"
+        app:layout_constraintBottom_toTopOf="@+id/editLayers_confirmChanges"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/edit_layers_load_layer"
+        android:title="@string/text_loadLayer" />
+    <item
+        android:id="@+id/edit_layers_save_layer"
+        android:title="@string/text_saveLayer" />
+</menu>

@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Data Collector</string>
+
+    <string name="mainActivity_viewLayers">Podgląd warstw</string>
+    <string name="mainActivity_createLayers">Tworzenie warstw</string>
+    <string name="mainActivity_editLayers">Modyfikacja warstw</string>
+    <string name="mainActivity_exitApp">Wyjście z aplikacji</string>
+    <string name="mainActivity_geometryType">Warstwę jakiego typu chcesz utworzyć?</string>
+    <string name="mainActivity_pointLayer">Nowa warstwa punktowa</string>
+    <string name="mainActivity_lineLayer">Nowa warstwa liniowa</string>
+    <string name="mainActivity_polygonLayer">Nowa warstwa poligonowa</string>
+    <string name="mainActivity_permissionsRequired">Do działania tej funkcji wymagane są uprawnienia lokalizacji, odczytu i zapisu danych.</string>
+
+    <string name="viewLayersActivity_centerAtLocation">Wyśrodkuj na lokalizacji</string>
+    <string name="viewLayersActivity_locationNotKnown">Lokalizacja urządzenia nieokreślona.</string>
+    <string name="viewLayersActivity_cannotAddLayer">Nie można dodać warstwy.</string>
+
+    <string name="createLayersActivity_wrongAttributes">Nie można utworzyć warstwy - nieprawidłowe atrybuty</string>
+    <string name="createLayersActivity_noVerticesToRemove">"Brak wierzchołków do usunięcia."</string>
+    <string name="createLayersActivity_notEnoughVerticesForLine">"Niewystarczająca ilość wierzchołków do utworzenia nowej linii."</string>
+    <string name="createLayersActivity_notEnoughVerticesForPolygon">Niewystarczająca ilość wierzchołków do utworzenia nowego poligonu.</string>
+
+    <string name="editLayersActivity_confirmGeometry">Zatwierdź geometrię.</string>
+    <string name="editLayersActivity_geometryTypeNotSupported">Ten typ geometrii nie jest wspierany.</string>
+    <string name="editLayersActivity_cannotLoadLayer">Nie można wczytać warstwy!</string>
+    <string name="editLayersActivity_layerSaved">Zapisano warstwę.</string>
+    <string name="editLayersActivity_cannotSaveLayer">Nie można zapisać warstwy.</string>
+    <string name="editLayersActivity_notEnoughVertices">Nie można zapisać geometrii - niewystarczająca ilość punktów.</string>
+    <string name="editLayersActivity_wrongNumberFormat">Nie można zapisać geometrii - niepoprawny zapis danych dotyczących geometrii.</string>
+    <string name="editLayersActivity_emptyLayer">Nie można utworzyć nowego obiektu dla pustej warstwy.</string>
+    <string name="editLayersActivity_lastFeature">"Nie można usunąć ostatniego obiektu."</string>
+    <string name="editLayersActivity_cannotRemoveFeature">Wystąpił błąd podczas usuwania obiektu.</string>
+    <string name="editLayersActivity_wrongColumnName">Niepoprawna nazwa kolumny.</string>
+
+    <string name="myFunctions_exitApp">Wyjście z aplikacji</string>
+    <string name="myFunctions_exitAppDesc">Jesteś pewien, że chcesz wyjść z aplikacji?</string>
+    <string name="myFunctions_goToMenu">Wyjście do menu głównego</string>
+    <string name="myFunctions_goToMenuDesc">Jesteś pewien, że chcesz wyjść do menu głównego bez zapisania zmian?</string>
+
+    <string name="basemap_osm">Open Street Map</string>
+    <string name="basemap_topo">Topograficzna</string>
+
+    <string name="text_latitude">Szerokość geograficzna : </string>
+    <string name="text_longitude">Długość geograficzna : </string>
+    <string name="text_chooseBasemap">Wybierz podkład</string>
+    <string name="text_addLayer">Dodaj warstwę</string>
+    <string name="text_removeLayer">Usuń warstwę</string>
+    <string name="text_newLayer">Nowa warstwa</string>
+    <string name="text_saveLayer">Zapisz warstwę</string>
+    <string name="text_loadLayer">Wczytaj warstwę</string>
+    <string name="text_yes">Tak</string>
+    <string name="text_no">Nie</string>
+    <string name="text_addPoint">Dodaj nowy punkt</string>
+    <string name="text_addVertex">Dodaj nowy wierzchołek</string>
+    <string name="text_removeVertex">Usuń ostatni wierzchołek</string>
+    <string name="text_attributes">Atrybuty</string>
+    <string name="text_createLine">Utwórz linię z wierzchołków</string>
+    <string name="text_createPolygon">Utwórz poligon z wierzchołków</string>
+    <string name="text_featureId">Id obiektu</string>
+    <string name="text_featureGeometry">Geometria obiektu</string>
+
+    <string name="text_editGeometry">Edytuj geometrię</string>
+    <string name="text_confirmChanges">Zatwierdź zmiany</string>
+    <string name="text_addFeature">Dodaj obiekt</string>
+    <string name="text_removeFeature">Usuń obiekt</string>
+    <string name="text_addAttribute">Dodaj atrybut</string>
+    <string name="text_removeAttribute">Usuń atrybut</string>
+
+    <string name="text_colName">Nazwa kolumny</string>
+    <string name="text_defaultValue">Wartość domyślna</string>
+    <string name="text_createColumn">Utwórz kolumnę</string>
+    <string name="text_createFeature">Utwórz obiekt</string>
+    <string name="text_newFeatureGeometryDesc">Geometria utworzonego obiektu będzie taka sama, jak ostatniego obiektu danej warstwy.</string>
+    <string name="text_newColNames">Nazwy kolumn atrybutów - oddzielone przecinkiem</string>
+    <string name="text_createLayer">Utwórz warstwę</string>
+    <string name="text_filename">Nazwa pliku (.geojson)</string>
+    <string name="text_save">Zapisz</string>
+    <string name="text_geometryHint">Szerokość, długość\nSzerokość, długość\n…\nSzerokość, długość</string>
+    <string name="text_verticesCoordinates">Współrzędne wierzchołków</string>
+    <string name="text_chooseAttribute">Wybierz atrybut do usunięcia</string>
+
+    <string name="values_osm">Open Street Map</string>
+    <string name="values_topo">Topograficzna</string>
+    <string name="values_null">null</string>
+    <string name="values_latitude">null</string>
+    <string name="values_longitude">null</string>
+</resources>

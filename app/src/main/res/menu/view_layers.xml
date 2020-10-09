@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/view_layers_change_basemap"
+        android:title="@string/text_chooseBasemap" />
+    <item
+        android:id="@+id/view_layers_add_layer"
+        android:title="@string/text_addLayer" />
+    <item
+        android:id="@+id/view_layers_remove_layer"
+        android:title="@string/text_removeLayer" />
+</menu>
